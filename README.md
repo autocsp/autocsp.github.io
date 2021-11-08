@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+## The AutoCSP Project
 
-You can use the [editor on GitHub](https://github.com/autocsp/autocsp.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+The AutoCSP project addresses problems where the solution is a combination of multiple decision variables, so-called combinatorial optimization problems. 
+The goal is to find a combination that fulfills all constraints that the problem has while optimizing an objective function. 
+Examples for these problems include machine or job scheduling, timetabling, lot sizing, or vehicle routing, all of which are highly relevant in industrial settings like production planning or delivery scheduling and are embedded in intelligent decision support systems. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The state-of-the-art technique to solve these problems are dedicated constraint solvers, which are highly optimized and have been investigated for a long time. 
+Still, searching for good or even optimal solutions often is time-consuming due to the enormous number of possible combinations that need to be explored while facing strong restrictions on which combinations form a feasible solution. 
+This is especially true when the same problem has to be repeatedly solved with different inputs, for example in daily production planning or fleet scheduling tasks. 
+Even though the general problem stays the same, experiences from earlier solutions are not used to solve new instances faster.
 
-### Markdown
+### Goal
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+AutoCSP advances the scientific knowledge and state-of-the-art through problem-specific solvers that combine data-driven machine learning (ML) models and logic-driven constraint solvers in a hybrid intelligent system. 
+These solvers are automatically generated from a constraint model, i.e. the description of the problem to be solved, and are self-taught to solve constraint satisfaction and optimization problems while maintaining correctness and time-efficiency. 
+To achieve this goal, the project investigates 
 
-```markdown
-Syntax highlighted code block
+1. how to generate training data just from the problem description, 
+2. how to present the data such that the ML model understands it, 
+3. how to efficiently learn from this data, and 
+4. how to bring everything together in one system.
 
-# Header 1
-## Header 2
-### Header 3
+### About
 
-- Bulleted
-- List
+The AutoCSP project is hosted by [Simula Research Laboratory](https://www.simula.no/) and funded by the Norwegian Research Council as a three-year researcher project with international mobility under grant number 324674. It is led by [Helge Spieker](https://www.simula.no/people/helge). 
+The research activities are carried out in collaboration with the [Machine Learning and Artificial Intelligence Lab](https://mlai.cs.uni-bonn.de/) at the University of Bonn, Germany.
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/autocsp/autocsp.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
